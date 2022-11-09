@@ -13,36 +13,50 @@ header {
 	box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0,6);
 	text-align: center;
 	text: #ffd9b3;
+	position: relative;
+	animation: boa;
+	animation-duration: 0.25s;
 	}
+@keyframes boa {
+	0% {left:0px; bottom:300px;}
+	99% {left:0px; bottom:0px}
+}
 body {background-image: url(images/orangejuice.jpg)}
 h1 {color:#ffd9b3; font-family:Arial}
 p {color:#ffd9b3; font-family:Arial}
 b {color:#ffd9b3; font-family:Arial}
 h2 {color:#ffd9b3; font-family:Arial}
 h5 {color:#ffd9b3; font-family:Arial}
-.myDiv {
+
+@keyframes bob {
+	0% {left:500px; top:0px;}
+	100% {left:0px; top:0px:}
+	}
+
+.myDiv20 {
 	margin: auto;
 	margin-top:25px;
 	margin-bottom:25px;
-	width: 20%;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	padding-bottom: 5px;
-	padding-top: 5px;
-	border-radius: 25px;
-	background-color: #804000;
-	text-align: center;
-	animation-name: nigga;
+	position: relative;
+	animation: bob;
+	animation-duration: 0.3s;
+	}
+.myDiv21 {
+	margin: auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	position: relative;
+	animation: bob;
+	animation-duration: 0.6s;
+	}
+.myDiv22 {
+	margin: auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	position: relative;
+	animation: bob;
 	animation-duration: 0.9s;
 	}
-
-.myDiv2 {
-	margin: auto;
-	margin-top:25px;
-	margin-bottom:25px;
-	animation-name:nigga;
-	animation-duration: 0.4s;
-	}
-
 .button{ 
 	position: relative;
 	left:40%;
@@ -60,7 +74,6 @@ h5 {color:#ffd9b3; font-family:Arial}
 	transition-duration: 0.6s;
 	cursor: pointer;
 	display: inline-block;
-
 	}
 .button1 {
 	background-color: #804000;
@@ -72,31 +85,80 @@ h5 {color:#ffd9b3; font-family:Arial}
 	border: #cc6600;
 	}
 
-@keyframes nigga {
+@keyframes bob {
 	0% {left:500px; top:0px;}
 	100% {left:0px; top:0px:}
 }
+.column {
+	float:right;
+	width:33.33%;
+	padding:5px;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.ctx {
+	margin: auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	text-align: center;
+	position: relative;
+	animation: boc;
+	animation-duration: 1s;
+}
+@keyframes boc {
+	0% {left:0px; top:1000px;}
+	100% {left:0px; top:0px}
+}
 
+			.column {
+				float: right;
+				width: 33.33%;
+				padding: 5px;
+			}
+			/* Clearfix (clear floats) */
+			.row::after {
+  				content: "";
+				clear: both;
+  				display: table;
 		</style>
 	</head>
 	<body>
 		<header>
 			<h1>I Fucking Love Orange Juice</h1>
 		</header>
-		<div class="myDiv2"> 
+		<div class="myDiv20"> 
 			<a href="why.html" class="button button1">
 				<b>Why do you love orange juice?</b>
 			</a>
 		</div>
-		<div class="myDiv2">
+		<div class="myDiv21">
 			<a href="how.html" class="button button1">
 				<b>How do you make orange juice?</b>
 			</a>
 		</div>
-		<div class="myDiv2">
+		<div class="myDiv22">
 			<a href="fuck.html" class="button button1">
 				<b>I don't care hahahahahahahaha</b>
 			</a>
+		</div>
+		<div class="ctx">
+			<b>Here are some nice pictures of oranges:</b>
+		</div>
+		<div>
+			<div class="row">
+				<div class="column">	
+					<img src="images/o.png" alt="orange juice" style="width:33.33%;">
+				</div>
+				<div class="column">
+					<img src="images/o.png" alt="orange" style="width:33.33%;">
+				</div>
+				<div class="column">
+					<img src="images/o.png" alt="orangejuice" style="width:33.33%;">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
