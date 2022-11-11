@@ -21,6 +21,39 @@ header {
 	0% {left:0px; bottom:300px;}
 	99% {left:0px; bottom:0px}
 }
+* {
+	box-sizing: border-box;
+}
+.column1 {
+	 float: left;
+	width: 33.33%;
+	padding: 5px;
+	position: relative;
+	animation: boc;
+	animation-duration:2s;
+}
+.column2 {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	position: relative;
+	animation: boc;
+	animation-duration:2.5s;
+}
+.column3 {
+	float: left;
+	width: 33.33%;	
+	padding: 5px;
+	position: relative;
+	animation: boc;
+	animation-duration:3s;
+}
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 body {background-image: url(images/orangejuice.jpg)}
 h1 {color:#ffd9b3; font-family:Arial}
 p {color:#ffd9b3; font-family:Arial}
@@ -89,16 +122,6 @@ h5 {color:#ffd9b3; font-family:Arial}
 	0% {left:500px; top:0px;}
 	100% {left:0px; top:0px:}
 }
-.column {
-	float:right;
-	width:33.33%;
-	padding:5px;
-}
-.row::after {
-	content: "";
-	clear: both;
-	display: table;
-}
 .ctx {
 	margin: auto;
 	margin-top:25px;
@@ -112,17 +135,6 @@ h5 {color:#ffd9b3; font-family:Arial}
 	0% {left:0px; top:1000px;}
 	100% {left:0px; top:0px}
 }
-
-			.column {
-				float: right;
-				width: 33.33%;
-				padding: 5px;
-			}
-			/* Clearfix (clear floats) */
-			.row::after {
-  				content: "";
-				clear: both;
-  				display: table;
 		</style>
 	</head>
 	<body>
@@ -147,17 +159,15 @@ h5 {color:#ffd9b3; font-family:Arial}
 		<div class="ctx">
 			<b>Here are some nice pictures of oranges:</b>
 		</div>
-		<div>
-			<div class="row">
-				<div class="column">	
-					<img src="images/o.png" alt="orange juice" style="width:33.33%;">
-				</div>
-				<div class="column">
-					<img src="images/o.png" alt="orange" style="width:33.33%;">
-				</div>
-				<div class="column">
-					<img src="images/o.png" alt="orangejuice" style="width:33.33%;">
-				</div>
+		<div class="row">
+			<div class="column1">	
+				<img src="images/o1.png" alt="orange" style="width:100%;">
+			</div>
+			<div class="column2">
+				<img src="images/o2.png" alt="orange" style="width:100%;">
+			</div>
+			<div class="column3">
+				<img src="images/o3.png" alt="orange" style="width:100%;">
 			</div>
 		</div>
 	</body>
