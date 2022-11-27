@@ -14,10 +14,7 @@ header {
 	animation: boa;
 	animation-duration: 0.25s;
 }
-@keyframes boa {
-	0% {left:0px; bottom:300px;}
-	99% {left:0px; bottom:0px}
-}
+
 * {
 	box-sizing: border-box;
 }
@@ -58,10 +55,93 @@ p {color:#ffd9b3; font-family:Arial}
 b {color:#ffd9b3; font-family:Arial}
 h2 {color:#ffd9b3; font-family:Arial}
 h5 {color:#ffd9b3; font-family:Arial}
+a {color:#ffd9b3; font-family:Arial}
 
-@keyframes bob {
-	0% {left:500px; top:0px;}
-	100% {left:0px; top:0px:}
+.b1 {
+	background-color: #804000;
+	margin:auto;
+}
+.b1:hover {
+	background-color: #1a0d00;
+}
+
+.myDiv {
+	margin: auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	position: relative;
+	width: 50%;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-radius: 40px;
+	background-color: #804000;
+	text-align: center;
+	animation-name: bota;
+	animation-duration: 0.6s;
+}
+
+.myDiv2 {
+	margin: auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	position: relative;
+	width: 20%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border: none;
+	border-radius: 25px;
+	background-color: #804000;
+	text-align: center;
+	animation-name: boc;
+	animation-duration:0.9s;
+}
+
+.myDiv3 {
+	margin: auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	position: relative;
+	width: 20%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border: none;
+	border-radius: 25px;
+	background-color: #804000;
+	text-align: center;
+	animation-name: boc;
+	animation-duration: 1.2s;
+}
+
+.myDiv4 {
+	margin: auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	position: relative;
+	width: 20%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border: none;
+	border-radius: 25px;
+	background-color: #804000;
+	text-align: center;
+	animation-name: boc;
+	animation-duration: 1.5s;
+}
+
+.backDiv{
+	margin:auto;
+	position: relative;
+	width: 100px;
+	border: none;
+	border-radius: 10px;
+	background-color: #804000;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	display: inline-block;
+	animation: bod
 }
 
 .myDiv20 {
@@ -107,6 +187,7 @@ h5 {color:#ffd9b3; font-family:Arial}
 	display: inline-block;
 }
 .button1 {
+	text-decoration: none;
 	background-color: #804000;
 	margin: auto;
 }
@@ -116,10 +197,6 @@ h5 {color:#ffd9b3; font-family:Arial}
 	border: #cc6600;
 }
 
-@keyframes bob {
-	0% {left:500px; top:0px;}
-	100% {left:0px; top:0px:}
-}
 .ctx {
 	margin: auto;
 	margin-top:25px;
@@ -129,8 +206,27 @@ h5 {color:#ffd9b3; font-family:Arial}
 	animation: boc;
 	animation-duration: 1s;
 }
+@keyframes boa {
+	0% {left:0px; bottom:300px;}
+	99% {left:0px; bottom:0px}
+}
+@keyframes bob {
+	0% {left:500px; top:0px;}
+	100% {left:0px; top:0px:}
+}
 @keyframes boc {
 	0% {left:0px; top:1000px;}
 	100% {left:0px; top:0px}
 }
+@keyframes bod {
+	0% {left: 0%; top: 0px;}
+	100% {left: 5%; top: 0px;}
+}
+@keyframes bota {
+	0% {left:600px; top:0px;}
+	100% {left:0px; top:0px;}
+}
+
+
+
 
