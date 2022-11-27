@@ -13,7 +13,7 @@ header {
 	position: relative;
 	animation: boa;
 	animation-duration: 0.25s;
-	}
+}
 @keyframes boa {
 	0% {left:0px; bottom:300px;}
 	99% {left:0px; bottom:0px}
@@ -62,7 +62,7 @@ h5 {color:#ffd9b3; font-family:Arial}
 @keyframes bob {
 	0% {left:500px; top:0px;}
 	100% {left:0px; top:0px:}
-	}
+}
 
 .myDiv20 {
 	margin: auto;
@@ -71,7 +71,7 @@ h5 {color:#ffd9b3; font-family:Arial}
 	position: relative;
 	animation: bob;
 	animation-duration: 0.3s;
-	}
+}
 .myDiv21 {
 	margin: auto;
 	margin-top:25px;
@@ -79,7 +79,7 @@ h5 {color:#ffd9b3; font-family:Arial}
 	position: relative;
 	animation: bob;
 	animation-duration: 0.6s;
-	}
+}
 .myDiv22 {
 	margin: auto;
 	margin-top:25px;
@@ -87,7 +87,7 @@ h5 {color:#ffd9b3; font-family:Arial}
 	position: relative;
 	animation: bob;
 	animation-duration: 0.9s;
-	}
+}
 .button{ 
 	position: relative;
 	left:40%;
@@ -105,16 +105,16 @@ h5 {color:#ffd9b3; font-family:Arial}
 	transition-duration: 0.6s;
 	cursor: pointer;
 	display: inline-block;
-	}
+}
 .button1 {
 	background-color: #804000;
 	margin: auto;
-	}
+}
 
 .button1:hover {	
 	background-color: #1a0d00;
 	border: #cc6600;
-	}
+}
 
 @keyframes bob {
 	0% {left:500px; top:0px;}
